@@ -19,7 +19,7 @@ Note: Terminate the container once you are done.
 Run the following command to build your docker image
 
 ```
-docker build . -t storj-cdn-node \
+docker build . -t storj-host \
     --build-arg ACCESS_GRANT=${ACCESS_GRANT} \
     --build-arg HOSTNAME=${HOSTNAME} \
     --build-arg BUCKET_PATH=${BUCKET_PATH} \
@@ -32,5 +32,5 @@ Note: BUCKET_PATH can be `BUCKET_NAME/www` or just `BUCKET_NAME`
 Then you can start the image as a container with the following command
 
 ```
-docker run storj-cdn-node
+docker run storj-host
 ```
